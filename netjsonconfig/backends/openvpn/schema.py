@@ -149,20 +149,20 @@ base_openvpn_schema = {
                     "default": "",
                     "propertyOrder": 19
                 },
-                "mtu_disc": {
-                    "title": "MTU discovery",
-                    "type": "string",
-                    "enum": ["no", "maybe", "yes"],
-                    "default": "no",
-                    "options": {
-                        "enum_titles": [
-                            "No - never send DF frames",
-                            "Maybe - Use per-route hints",
-                            "Yes - always DF"
-                        ]
-                    },
-                    "propertyOrder": 20,
-                },
+#                "mtu_disc": {
+#                    "title": "MTU discovery",
+#                    "type": "string",
+#                    "enum": ["no", "maybe", "yes"],
+#                    "default": "no",
+#                    "options": {
+#                        "enum_titles": [
+#                            "No - never send DF frames",
+#                            "Maybe - Use per-route hints",
+#                            "Yes - always DF"
+#                        ]
+#                    },
+#                    "propertyOrder": 20,
+#                },
                 "mtu_test": {
                     "title": "MTU test",
                     "description": "Empirically measures MTU on connection startup, can take up to "
