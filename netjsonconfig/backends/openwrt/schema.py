@@ -4,6 +4,7 @@ OpenWrt specific JSON-Schema definition
 from ...schema import schema as default_schema
 from ...utils import merge_config
 from ..openvpn.schema import base_openvpn_schema
+from ..muvirt.schema import base_muvirt_schema
 from .timezones import timezones
 
 
@@ -478,3 +479,5 @@ schema = merge_config(schema, {
         }
     }
 })
+
+schema = merge_config(schema, base_muvirt_schema)

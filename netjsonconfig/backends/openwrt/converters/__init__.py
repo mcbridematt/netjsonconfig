@@ -9,8 +9,10 @@ from .routes import Routes
 from .rules import Rules
 from .switch import Switch
 from .wireless import Wireless
+from .muvirt import MuVirt
+from .muvirtprov import MuVirtProvisioning
 
 __all__ = ['Default', 'Interfaces', 'General',
            'Led', 'Ntp', 'OpenVpn', 'Radios',
            'Routes', 'Rules', 'Switch',
-           'Wireless']
+           'Wireless', 'MuVirt', 'MuVirtProvisioning']
