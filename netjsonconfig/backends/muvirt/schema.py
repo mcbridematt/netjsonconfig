@@ -99,13 +99,21 @@ base_muvirt_schema = {
     				"description": "URL to download initial image from",
     				"propertyOrder": 6
     			},
+    			"imagesum256": {
+    				"type": "string",
+    				"title": "Image sha256sum",
+    				"description": "If provided, the downloaded image will be checked against this sha256sum",
+    				"propertyOrder": 7,
+    			},
     			"provisioned": {
     				"type": "boolean",
     				"title": "VM Provisioned?",
     				"description": "This flag is set when the VM has been provisioned "
-    					"(i.e the image has been downloaded and copied)",
+    					"(i.e the image has been downloaded and copied)."
+    					"Do not set this flag to true from OpenWISP unless the provisioning is "
+    					"handled outside of uVirt",
     				"default": False,
-					"propertyOrder": 7
+					"propertyOrder": 8
 				},
 				"cloudinit": {
     				"type": "string",
@@ -114,20 +122,20 @@ base_muvirt_schema = {
     					"(Tip: Use the Files section to distribute files to the device)."
     					"The downloaded file will be wrapped into a vfat image called cidata.",
     				"default": "",
-    				"propertyOrder": 8
+    				"propertyOrder": 9
     			},
     			"telnet": {
     				"type": "integer",
     				"title": "Telnet console port",
     				"description": "Port to spawn ttyS0 serial console on",
     				"default": 4446,
-    				"propertyOrder": 9
+    				"propertyOrder": 10
     			},
     			"enable": {
     				"title": "Enable this VM?",
     				"type": "boolean",
     				"default": True,
-    				"propertyOrder": 10
+    				"propertyOrder": 11
     			},
     		}
     	}
