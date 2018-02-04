@@ -13,6 +13,7 @@ class MuVirtProvisioning(OpenWrtConverter):
 		print("muvirt_prov intermediate loop:")
 		result.setdefault('virt', [])
 		block['.type'] = 'muvirt'
+		block['.name'] = 'options'
 		result['virt'] += [self.sorted_dict(block)]
 		
 		return result
